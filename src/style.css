@@ -1,18 +1,19 @@
 @import url(/src/Components/Badge.css);
 @import 'tailwindcss';
 
-@theme{
-    --color-primary: #88c74a ;
+@theme {
+    --color-primary: #88c74a;
 }
 
 
 
-body{
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.custom_icon{
+
+.custom_icon {
     margin-right: 20px;
 }
 
@@ -25,8 +26,33 @@ body{
     margin-right: 20px;
 }
 
-.border_right{
+.border_right {
     padding: 1rem;
     height: 10px;
 }
 
+.category {
+    @apply inline-block relative w-[300px]
+}
+
+#categorySelector {
+    width: 100%;
+    padding: 10px;
+    appearance: none;
+    /*برایحذفاستایلپیشفرضمرورگر*/-webkit-appearance: none;
+    -moz-appearance: none;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.category .icon{
+    position: absolute;
+    left: 30px;
+    top: 30%;
+    font-size: 20px;
+    pointer-events: none;
+}

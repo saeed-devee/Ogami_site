@@ -623,7 +623,7 @@
       </div>
     </div>
     <!-- bottom of topbar -->
-      <div class="h-[50] px-[190px]">
+      <div class="h-[50] px-[190px] flex gap-x-5">
         <div class="w-[252px] h-[50px] flex items-center justify-center bg-primary px-5 py-3 text-white">  
           <svg class="w-6 h-6">
             <use xlink:href="#barIcon"></use>
@@ -633,17 +633,18 @@
             <use xlink:href="#angleDown"></use>
           </svg>
         </div>
-        <div>
-          <select name="category" id="categorySelector">
+        <div class="category flex items-center p-4">
+          <select name="category" class="border border-gray-100" id="categorySelector">
             <option value="default" selected>یک دسته را انتخاب نمایید</option>
-            <option value="orange"></option>
-            <option value="vegetables"></option>
-            <option value="ocean-foods"></option>
-            <option value="fastfood"></option>
-            <option value="fresh-meat"></option>
-            <option value="bread"></option>
-            <option value="organic-drinks"></option>
+            <option value="orange">پرتقال</option>
+            <option value="vegetables">سبزیجات</option>
+            <option value="ocean-foods">غذای دریایی</option>
+            <option value="diet-food">غذای رژیمی</option>
+            <option value="fresh-meat">گوشت تازه</option>
+            <option value="bread">نان</option>
+            <option value="organic-drinks">نوشیدنی ارگانیک</option>
           </select>
+          <span class="icon">&#9662;</span>
         </div>
         <div></div>
       </div>
