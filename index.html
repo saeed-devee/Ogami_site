@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ogami Site | فروشگاه میوه و سبزیجات</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body class="font-sans">
+    <svg class="hidden">
+      <symbol
+        id="facebook"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+      <symbol
+        id="pinterest"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"
+        />
+      </symbol>
+      <symbol
+        id="linkedin"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+          clip-rule="evenodd"
+        />
+        <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
+      </symbol>
+      <symbol
+        id="twitter"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M22 5.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.343 8.343 0 0 1-2.605.981A4.13 4.13 0 0 0 15.85 4a4.068 4.068 0 0 0-4.1 4.038c0 .31.035.618.105.919A11.705 11.705 0 0 1 3.4 4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 6.1 13.635a4.192 4.192 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 2 18.184 11.732 11.732 0 0 0 8.291 20 11.502 11.502 0 0 0 19.964 8.5c0-.177 0-.349-.012-.523A8.143 8.143 0 0 0 22 5.892Z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+      <symbol
+        id="ukflag"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+        viewBox="0 0 256 256"
+        xml:space="preserve"
+      >
+        <g
+          style="
+            stroke: none;
+            stroke-width: 0;
+            stroke-dasharray: none;
+            stroke-linecap: butt;
+            stroke-linejoin: miter;
+            stroke-miterlimit: 10;
+            fill: none;
+            fill-rule: nonzero;
+            opacity: 1;
+          "
+          transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+        >
+          <path
+            d="M 88.35 57.052 c 0.034 -0.123 0.076 -0.243 0.109 -0.367 l -0.004 -0.002 C 89.457 52.957 90 49.043 90 45 c 0 -4.033 -0.54 -7.938 -1.538 -11.657 l 0.004 -0.002 c -0.039 -0.146 -0.088 -0.289 -0.128 -0.434 c -0.137 -0.492 -0.28 -0.982 -0.434 -1.468 c -0.081 -0.257 -0.167 -0.512 -0.253 -0.768 c -0.073 -0.217 -0.139 -0.437 -0.215 -0.653 h -0.015 c -1.645 -4.653 -4.021 -8.96 -7.01 -12.768 L 59.997 27.458 V 2.57 c -4.368 -1.544 -9.046 -2.427 -13.915 -2.542 h -2.164 c -4.868 0.115 -9.545 0.998 -13.913 2.541 v 24.889 L 9.589 17.249 c -2.989 3.809 -5.366 8.116 -7.01 12.769 H 2.564 c -0.076 0.216 -0.143 0.436 -0.216 0.653 c -0.086 0.255 -0.172 0.509 -0.253 0.765 c -0.154 0.486 -0.297 0.977 -0.434 1.47 c -0.04 0.145 -0.089 0.287 -0.128 0.432 l 0.004 0.002 C 0.54 37.061 0 40.966 0 45 c 0 4.043 0.543 7.957 1.545 11.684 l -0.004 0.002 c 0.033 0.123 0.074 0.242 0.108 0.365 c 0.146 0.524 0.298 1.046 0.462 1.562 c 0.075 0.236 0.154 0.47 0.233 0.705 c 0.077 0.231 0.148 0.464 0.229 0.693 H 2.59 c 1.647 4.651 4.025 8.955 7.016 12.761 l 20.4 -10.2 v 24.86 C 34.697 89.089 39.741 90 45 90 c 5.26 0 10.305 -0.911 14.997 -2.57 V 62.572 l 20.398 10.199 c 2.991 -3.806 5.368 -8.11 7.015 -12.76 h 0.015 c 0.081 -0.229 0.152 -0.463 0.23 -0.694 c 0.079 -0.234 0.158 -0.468 0.233 -0.704 C 88.052 58.096 88.205 57.575 88.35 57.052 z"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(243, 244, 245);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+          <path
+            d="M 53.999 0.902 c -2.565 -0.521 -5.213 -0.81 -7.917 -0.874 h -2.164 c -2.703 0.064 -5.35 0.354 -7.914 0.874 v 35.116 H 0.899 C 0.311 38.92 0 41.924 0 45 c 0 3.087 0.312 6.1 0.904 9.012 h 35.1 v 35.087 C 38.911 89.689 41.919 90 45 90 c 3.082 0 6.091 -0.311 8.999 -0.902 V 54.012 h 35.097 C 89.688 51.1 90 48.087 90 45 c 0 -3.076 -0.311 -6.08 -0.899 -8.983 H 53.999 V 0.902 z"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(204, 0, 0);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+          <path
+            d="M 85.242 65.135 c 0.829 -1.653 1.56 -3.363 2.184 -5.125 H 74.993 L 85.242 65.135 z"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(204, 0, 0);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+          <path
+            d="M 82.216 19.701 L 61.581 30.019 h 13.412 l 10.261 -5.131 C 84.353 23.088 83.341 21.354 82.216 19.701 z"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(204, 0, 0);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+          <path
+            d="M 4.747 24.887 c -0.829 1.655 -1.559 3.368 -2.182 5.132 H 15.01 L 4.747 24.887 z"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(204, 0, 0);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+          <path
+            d="M 7.8 70.321 L 28.422 60.01 H 15.01 L 4.758 65.136 C 5.661 66.936 6.674 68.67 7.8 70.321 z"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(204, 0, 0);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+          <path
+            d="M 9.605 72.771"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(0, 0, 102);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+          <path
+            d="M 80.412 17.251"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(0, 0, 102);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+          <path
+            d="M 80.395 72.77"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(0, 0, 102);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+          <path
+            d="M 9.589 17.25"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(0, 0, 102);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+          <path
+            d="M 9.589 17.249 l 20.416 10.208 v -3.99 V 2.584 C 21.874 5.458 14.813 10.593 9.589 17.249 z"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(0, 0, 102);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+          <path
+            d="M 59.997 2.585 v 22.302 v 2.57 L 80.411 17.25 C 75.188 10.594 68.128 5.459 59.997 2.585 z"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(0, 0, 102);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+          <path
+            d="M 30.006 72.77 V 62.572 l -20.4 10.2 c 5.222 6.646 12.276 11.774 20.4 14.646 V 72.77 z"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(0, 0, 102);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+          <path
+            d="M 59.997 62.572 v 9.296 v 15.548 c 8.123 -2.872 15.176 -8 20.398 -14.646 L 59.997 62.572 z"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(0, 0, 102);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+        </g>
+      </symbol>
+      <symbol
+        id="lock"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="18"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 14v3m-3-6V7a3 3 0 1 1 6 0v4m-8 0h10a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1Z"
+        />
+      </symbol>
+      <symbol
+        id="mailbox"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+        viewBox="0 0 256 256"
+        xml:space="preserve"
+      >
+        <g
+          style="
+            stroke: none;
+            stroke-width: 0;
+            stroke-dasharray: none;
+            stroke-linecap: butt;
+            stroke-linejoin: miter;
+            stroke-miterlimit: 10;
+            fill: #000;
+            fill-rule: nonzero;
+            opacity: 1;
+          "
+          transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+        >
+          <path
+            d="M 75.546 78.738 H 14.455 C 6.484 78.738 0 72.254 0 64.283 V 25.716 c 0 -7.97 6.485 -14.455 14.455 -14.455 h 61.091 c 7.97 0 14.454 6.485 14.454 14.455 v 38.567 C 90 72.254 83.516 78.738 75.546 78.738 z M 14.455 15.488 c -5.64 0 -10.228 4.588 -10.228 10.228 v 38.567 c 0 5.64 4.588 10.229 10.228 10.229 h 61.091 c 5.64 0 10.228 -4.589 10.228 -10.229 V 25.716 c 0 -5.64 -4.588 -10.228 -10.228 -10.228 H 14.455 z"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(29, 29, 27);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+          <path
+            d="M 11.044 25.917 C 21.848 36.445 32.652 46.972 43.456 57.5 c 2.014 1.962 5.105 -1.122 3.088 -3.088 C 35.74 43.885 24.936 33.357 14.132 22.83 C 12.118 20.867 9.027 23.952 11.044 25.917 L 11.044 25.917 z"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(29, 29, 27);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+          <path
+            d="M 46.544 57.5 c 10.804 -10.527 21.608 -21.055 32.412 -31.582 c 2.016 -1.965 -1.073 -5.051 -3.088 -3.088 C 65.064 33.357 54.26 43.885 43.456 54.412 C 41.44 56.377 44.529 59.463 46.544 57.5 L 46.544 57.5 z"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(29, 29, 27);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+          <path
+            d="M 78.837 64.952 c -7.189 -6.818 -14.379 -13.635 -21.568 -20.453 c -2.039 -1.933 -5.132 1.149 -3.088 3.088 c 7.189 6.818 14.379 13.635 21.568 20.453 C 77.788 69.973 80.881 66.89 78.837 64.952 L 78.837 64.952 z"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(29, 29, 27);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+          <path
+            d="M 14.446 68.039 c 7.189 -6.818 14.379 -13.635 21.568 -20.453 c 2.043 -1.938 -1.048 -5.022 -3.088 -3.088 c -7.189 6.818 -14.379 13.635 -21.568 20.453 C 9.315 66.889 12.406 69.974 14.446 68.039 L 14.446 68.039 z"
+            style="
+              stroke: none;
+              stroke-width: 1;
+              stroke-dasharray: none;
+              stroke-linecap: butt;
+              stroke-linejoin: miter;
+              stroke-miterlimit: 10;
+              fill: rgb(29, 29, 27);
+              fill-rule: nonzero;
+              opacity: 1;
+            "
+            transform=" matrix(1 0 0 1 0 0) "
+            stroke-linecap="round"
+          />
+        </g>
+      </symbol>
+      <symbol id="phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z"
+        />
+      </symbol>
+      <symbol
+        id="heartIcon"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1"
+          d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"
+        />
+      </symbol>
+      <symbol
+        id="shoppingBag"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1"
+          d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2 .917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8h12Z"
+        />
+      </symbol>
+      <symbol
+        id="angleDown"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="m19 9-7 7-7-7"
+        />
+      </symbol>
+      <symbol id="barIcon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+      </symbol>
+      
+    </svg>
+
+    <div
+      class="fixed z-10 w-[1500px] bg-linear-to-b from-gray-100 to-indigo-50 h-11 flex justify-between items-center"
+      id="topBar"
+    >
+      <!-- right topBar -->
+      <div class="flex justify-center items-center gap-x-12">
+        <!-- Icons -->
+        <div class="flex items-center justify-start gap-x-4 custom_icon">
+          <svg class="w-6 h-6 group">
+            <use
+              xlink:href="#facebook"
+              class="group-hover:text-indigo-600"
+            ></use>
+          </svg>
+          <svg class="w-6 h-6 group">
+            <use
+              xlink:href="#twitter"
+              class="group-hover:text-indigo-600"
+            ></use>
+          </svg>
+          <svg class="w-6 h-6 group">
+            <use
+              xlink:href="#linkedin"
+              class="group-hover:text-indigo-600"
+            ></use>
+          </svg>
+          <svg class="w-6 h-6 group">
+            <use
+              xlink:href="#pinterest"
+              class="group-hover:text-indigo-600"
+            ></use>
+          </svg>
+        </div>
+
+        <div class="flex justify-between items-center">
+          <svg class="w-4 h-4">
+            <use xlink:href="#ukflag"></use>
+          </svg>
+          <select name="languages" id="languages" class="outline-0">
+            <option value="English">English</option>
+            <option value="German">German</option>
+            <option value="French">French</option>
+          </select>
+        </div>
+
+        <div class="flex items-center justify-center gap-x-1.5">
+          <svg class="w-4 h-4">
+            <use xlink:href="#lock"></use>
+          </svg>
+          <span class="text-sm font-bold">ورود</span>
+        </div>
+      </div>
+
+      <!-- left topBar -->
+      <div class="flex items-center justify-between gap-x-[3rem] text-sm">
+        <div class="flex items-center justify-between gap-x-2 font-medium">
+          <svg class="w-4 h-4">
+            <use xlink:href="#mailbox"></use>
+          </svg>
+          <span>ایمیل خود را وارد کنید</span>
+        </div>
+        <div
+          class="flex items-center justify-between gap-x-1 font-medium before:content-none border-r border-r-gray-300 border_right"
+        >
+          <svg class="w-4 h-4">
+            <use xlink:href="#phone"></use>
+          </svg>
+          <span>شماره خود را وارد کنید</span>
+        </div>
+      </div>
+    </div>
+    <!-- Top Header -->
+
+    <section class="fixed top-[50px] z-10 w-full h-[200px] bg-white">
+      <!-- logo image -->
+    <div class="flex items-center justify-between my-6 px-[190px]">
+      <div class="flex items-center w-[285px]">
+        <img src="/assets/logo-1.png" alt="logo" class="w-[159px]" />
+      </div>
+    <!-- menu -->
+      <div class="ml-80">
+        <ul
+          class="flex items-center justify-start gap-x-8 font-medium *:relative"
+        >
+          <li>
+            <a href="#" class="inline-flex"
+              >خانه
+              <svg class="w-3 h-3 absolute top-2 left-[-18px]">
+                <use xlink:href="#angleDown"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="inline-flex"
+              >وبلاگ
+              <svg class="w-3 h-3 absolute top-2 left-[-18px]">
+                <use xlink:href="#angleDown"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              >فروشگاه<svg class="w-3 h-3 absolute top-2 left-[-18px]">
+                <use xlink:href="#angleDown"></use></svg
+            ></a>
+          </li>
+          <li><a href="#">درباره ما</a></li>
+          <li>
+            <a href="#"
+              >صفحات<svg class="w-3 h-3 absolute top-2 left-[-18px]">
+                <use xlink:href="#angleDown"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    <!-- cart,like icons -->
+      <div class="flex items-center justify-center gap-x-5">
+        <div class="badge">
+          <svg class="w-7 h-7">
+            <use xlink:href="#heartIcon"></use>
+          </svg>
+        </div>
+        <div>
+          <svg class="w-7 h-7">
+            <use xlink:href="#shoppingBag"></use>
+          </svg>
+        </div>
+        <span class="badge">0 تومان</span>
+      </div>
+    </div>
+    <!-- bottom of topbar -->
+      <div class="h-[50] px-[190px]">
+        <div class="w-[252px] h-[50px] flex items-center justify-center bg-primary px-5 py-3 text-white">  
+          <svg class="w-6 h-6">
+            <use xlink:href="#barIcon"></use>
+          </svg>  
+          <span class="text-lg ml-11 mr-3">همه بخش ها</span>
+          <svg class="w-4 h-4">
+            <use xlink:href="#angleDown"></use>
+          </svg>
+        </div>
+        <div>
+          <select name="category" id="categorySelector">
+            <option value="default" selected>یک دسته را انتخاب نمایید</option>
+            <option value="orange"></option>
+            <option value="vegetables"></option>
+            <option value="ocean-foods"></option>
+            <option value="fastfood"></option>
+            <option value="fresh-meat"></option>
+            <option value="bread"></option>
+            <option value="organic-drinks"></option>
+          </select>
+        </div>
+        <div></div>
+      </div>
+    </section>
+
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
