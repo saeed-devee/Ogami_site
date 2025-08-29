@@ -32,27 +32,21 @@ body {
 }
 
 .category {
-    @apply inline-block relative w-[300px]
+    @apply inline-block relative
 }
 
 #categorySelector {
     width: 100%;
-    padding: 10px;
+    padding-right: 10px;
     appearance: none;
-    /*برایحذفاستایلپیشفرضمرورگر*/-webkit-appearance: none;
+    -webkit-appearance: none;
     -moz-appearance: none;
     background: white;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
 }
 .category .icon{
     position: absolute;
-    left: 30px;
-    top: 30%;
+    left: 0%;
+    top: -2%;
     font-size: 20px;
     pointer-events: none;
 }
