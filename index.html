@@ -492,14 +492,15 @@
       
     </svg>
 
+    <!-- top Nav -->
     <div
-      class="fixed z-10 w-[1500px] bg-linear-to-b from-gray-100 to-indigo-50 h-11 flex justify-between items-center"
+      class="text-base fixed z-10 w-full h-11 flex justify-evenly items-center bg-linear-to-b from-gray-100 to-indigo-50  sm:text-xs"
       id="topBar"
     >
       <!-- right topBar -->
-      <div class="flex justify-center items-center gap-x-12">
+      <div class="flex justify-center items-center gap-x-4">
         <!-- Icons -->
-        <div class="flex items-center justify-start gap-x-4 custom_icon">
+        <div class="flex items-center justify-start gap-x-1 pt-2 custom_icon">
           <svg class="w-6 h-6 group">
             <use
               xlink:href="#facebook"
@@ -527,10 +528,10 @@
         </div>
 
         <div class="flex justify-between items-center">
-          <svg class="w-4 h-4">
+          <svg class="hidden w-4 h-4">
             <use xlink:href="#ukflag"></use>
           </svg>
-          <select name="languages" id="languages" class="outline-0">
+          <select name="languages" id="languages" class="outline-0 text-sm">
             <option value="English">English</option>
             <option value="German">German</option>
             <option value="French">French</option>
@@ -541,25 +542,25 @@
           <svg class="w-4 h-4">
             <use xlink:href="#lock"></use>
           </svg>
-          <span class="text-sm font-bold">ورود</span>
+          <span class="text-xs font-bold select-none sm:text-sm">ورود</span>
         </div>
       </div>
 
       <!-- left topBar -->
-      <div class="flex items-center justify-between gap-x-[3rem] text-sm">
+      <div class="flex items-center justify-between gap-x-8 text-xs whitespace-nowrap sm:text-sm ">
         <div class="flex items-center justify-between gap-x-2 font-medium">
-          <svg class="w-4 h-4">
+          <svg class="w-4.5 h-4.5 font-light sm:w-4 sm:h-4">
             <use xlink:href="#mailbox"></use>
           </svg>
-          <span>ایمیل خود را وارد کنید</span>
+          <span class="hidden sm:flex sm:text-sm">ایمیل خود را وارد کنید</span>
         </div>
         <div
-          class="flex items-center justify-between gap-x-1 font-medium before:content-none border-r border-r-gray-300 border_right"
+          class="flex items-center justify-between gap-x-3 font-medium sm:before:border sm:before:border-gray-200 sm:before:h-6"
         >
-          <svg class="w-4 h-4">
+          <svg class="w-4.5 h-4.5 font-light sm:w-4 sm:h-4">
             <use xlink:href="#phone"></use>
           </svg>
-          <span>شماره خود را وارد کنید</span>
+          <span class="hidden sm:flex sm:text-sm">شماره خود را وارد کنید</span>
         </div>
       </div>
     </div>
@@ -660,7 +661,7 @@
       <div class="swiper-wrapper w-full absolute top-20">
         <!-- Slides -->
         <div class="swiper-slide flex justify-center items-center w-full h-64 py-8 px-24">
-          <img src="public/assets/slider121.png" alt="orange" class="absolute left-30 h-[80%] object-center object-cover">
+          <img src="/assets/slider121.png" alt="orange" class="absolute left-30 h-[80%] object-center object-cover">
           <div class="relative flex flex-col items-start text-right p-4 rounded-lg max-w-xs ml-auto">
             <span class="text-sm font-bold text-primary mb-4">آب مرکبات</span>
             <h1 class="font-bold text-3xl tracking-tighter mb-3 ">آبمیوه 100% ارگانیک</h1>
@@ -670,7 +671,7 @@
           </div>
         </div>
         <div class="swiper-slide flex justify-center items-center w-full h-64 py-8 px-24">
-          <img src="public/assets/slider12.png" alt="vegetables" class="absolute left-30 h-[80%] object-center object-cover">
+          <img src="/assets/slider12.png" alt="vegetables" class="absolute left-30 h-[80%] object-center object-cover">
           <div class="relative flex flex-col items-start text-right p-4 rounded-lg max-w-xs ml-auto">
             <span class="text-sm font-bold text-primary mb-4">میوه تازه</span>
             <h1 class="font-bold text-3xl tracking-tighter mb-3">لیمو و نارنج</h1>
