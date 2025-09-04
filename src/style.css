@@ -3,8 +3,29 @@
 
 @theme {
     --color-primary: #88c74a;
+    --font-iranFamily: "iranFamily";
+    --font-iranFamilyBold: "iranFamilyBold";
+    --font-iranFamilyBlack: "iranFamilyBlack";
+    --font-iranFamilyNum: "iranFamilyNum";
 }
 
+
+@font-face {
+    font-family: "iranFamily";
+    src: url(/assets/fonts/IRAN.ttf);
+}
+@font-face {
+    font-family: "iranFamilyBold";
+    src: url(/assets/fonts/IRAN_Bold.ttf);
+}
+@font-face {
+    font-family: "iranFamilyBlack";
+    src: url(/assets/fonts/IRAN_Black.ttf);
+}
+@font-face {
+    font-family: "iranFamilyNumeric";
+    src: url(/assets/fonts/IRAN\(FaNum\).ttf);
+}
 
 
 body {
